@@ -1,0 +1,224 @@
+html{
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* h1{
+  font-size: 24px !important;
+  font-weight: 900;
+}
+
+h2{
+  font-size: 18px !important;
+  font-weight: 400;
+}
+
+h3{
+  font-size: 14px !important;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 13px !important;
+  font-weight: 900;
+}
+
+h5{
+  font-size: 12px !important;
+  font-weight: 900;
+}
+
+h6{
+  font-size: 11px !important;
+  font-weight: 600;
+} */
+
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.light-mode{
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #161625;
+  color: #bdbdbd;
+}
+
+.home{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 5rem;
+}
+
+.app-left{
+  display: flex;
+  flex-direction: column;
+  width: 37rem;
+  min-height: 60rem;
+}
+
+.app-right{
+  display: flex;
+  flex-direction: column;
+  width: 37rem;
+  margin-left: 2.5rem;
+  min-height: 10rem;
+}
+
+.app-header{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  width:100%;
+}
+
+.app-search{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.app-search h6{
+  align-self: center;
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.line{
+  align-self: center;
+  height: 1rem;
+  width: 2px;
+  background: rgba(108,117,125,.0627451);
+}
+
+.app-dropdown{
+  width: 100%;
+  position: relative;
+  align-self: center;
+  box-shadow: 0 10px 35px rgba(0,0,0,.1);
+  color: #bdbdbd;
+}
+
+.app-date{
+  font-size: 1rem;
+  align-self: center;
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.app-select {
+  background-color: transparent;
+  color: #bdbdbd;
+}
+
+.app-menuitem {
+  background-color: turquoise;
+}
+
+.app-stats{
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.app-stats .infoitem {
+  width: 25%;
+}
+
+.app-mytable{
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  overflow-x: auto;
+  width: 100%;
+}
+/* 
+.app-stats .confirmedBox{
+  color: #ff073a;
+} */
+
+.app-table {
+  align-self: center;
+  overflow-x: auto;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.app-title {
+  text-align: center;
+  align-self: center;
+  height: 5.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.app-map{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.geomap {
+  align-self: center;
+  margin-bottom: 3rem;
+  position: relative;
+  width: 100%;
+  border: 5px rgba(108, 117, 125, 0.125) solid;
+}
+
+.linegraph-title{
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* .app-theme {
+
+} */
+
+.theme-button{
+  border: 0px;
+  position: fixed;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  top: 0;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 35px rgba(0,0,0,.2);
+}
+
+@media (max-width: 990px){
+  .app{
+    flex-direction: column;
+  }
+  .app-left{
+    width: 90vw;
+  }
+}

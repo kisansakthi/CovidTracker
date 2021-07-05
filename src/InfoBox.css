@@ -1,0 +1,74 @@
+/* .infoBox {
+    flex:1;
+    margin-right: 7px;
+    margin-left: 7px;
+} */
+
+/* .infoBox:not(:last-child) {
+    margin-right: 15px;
+} */
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 10rem;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.infoBox-Cases {
+    color: #ff073a;
+}
+
+.infoBox-Active {
+    color: #007bff;
+}
+
+.infoBox-Recovered {
+    color: #28a745;
+}
+
+.infoBox-Deaths {
+    color: #6c757d;
+}
+
+.infoBox-title {
+    align-self: center;
+    text-align: center;
+    font-size: 1rem !important;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+.infoBox-cases {
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem !important;
+}
+
+.infoBox-total {
+    align-self: center;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+}
+
+.infoBox-selected-Cases {
+    background-color: rgba(255, 7, 58, 0.125);
+}
+
+.infoBox-selected-Recovered {
+    background-color: rgba(40, 167, 69, 0.125);
+}
+
+.infoBox-selected-Deaths{
+    background-color: rgba(108, 117, 125, 0.125);
+}
+
+.infoBox-selected-Active {
+    background-color: rgba(0, 123, 255, 0.125);
+}
